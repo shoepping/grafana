@@ -1,2 +1,4 @@
-dashboards from https://grafana.com/grafana/dashboards?search=jmeter&dataSource=influxdb
-filename represents dashboard id
+
+Apache_JMeter_Dashboard_using_Core_InfluxdbBackendListenerClient_5496.json
+initially based on
+https://grafana.com/grafana/dashboards/5496
