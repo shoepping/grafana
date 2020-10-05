@@ -20,8 +20,7 @@
   "editable": true,
   "gnetId": 5496,
   "graphTooltip": 0,
-  "id": 15,
-  "iteration": 1601898230559,
+  "iteration": 1601907687760,
   "links": [],
   "panels": [
     {
@@ -975,7 +974,7 @@
       "aliasColors": {
         "banner": "#508642"
       },
-      "bars": false,
+      "bars": true,
       "dashLength": 10,
       "dashes": false,
       "datasource": "$data_source",
@@ -1013,7 +1012,7 @@
         "total": false,
         "values": true
       },
-      "lines": true,
+      "lines": false,
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
@@ -2213,7 +2212,7 @@
         "Median": "#6ed0e0",
         "median": "#6ed0e0"
       },
-      "bars": false,
+      "bars": true,
       "dashLength": 10,
       "dashes": false,
       "datasource": "$data_source",
@@ -2251,7 +2250,7 @@
         "total": false,
         "values": true
       },
-      "lines": true,
+      "lines": false,
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
@@ -2790,5 +2789,5 @@
   "timezone": "browser",
   "title": "JMeter",
   "uid": "NHeRD3FGj",
-  "version": 3
+  "version": 1
 }
