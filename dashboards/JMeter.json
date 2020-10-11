@@ -20,7 +20,7 @@
   "editable": true,
   "gnetId": 5496,
   "graphTooltip": 0,
-  "iteration": 1601907687760,
+  "iteration": 1602432979101,
   "links": [],
   "panels": [
     {
@@ -907,7 +907,7 @@
           ],
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"maxAT\") FROM \"$measurement_name\" WHERE (\"transaction\" = 'internal' AND \"application\" =~ /^$application$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "query": "SELECT last(\"startedT\") FROM \"$measurement_name\" WHERE (\"transaction\" = 'internal' AND \"application\" =~ /^$application$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -932,7 +932,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Active Threads",
+      "title": "Active Users / Threads",
       "tooltip": {
         "shared": true,
         "sort": 0,
