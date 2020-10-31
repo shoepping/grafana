@@ -1,5 +1,5 @@
 # https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact
-ARG GRAFANA_VERSION=7.2.1-ubuntu
+ARG GRAFANA_VERSION=7.3.1-ubuntu
 # Using official grafana image
 FROM grafana/grafana:${GRAFANA_VERSION}
 ARG GRAFANA_VERSION
