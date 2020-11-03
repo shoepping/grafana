@@ -20,7 +20,7 @@
   "editable": true,
   "gnetId": 5496,
   "graphTooltip": 0,
-  "iteration": 1602432979101,
+  "iteration": 1604381762679,
   "links": [],
   "panels": [
     {
@@ -92,7 +92,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "targets": [
         {
           "dsType": "influxdb",
@@ -190,7 +190,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "targets": [
         {
           "dsType": "influxdb",
@@ -288,7 +288,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "targets": [
         {
           "dsType": "influxdb",
@@ -386,7 +386,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "targets": [
         {
           "dsType": "influxdb",
@@ -488,7 +488,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "targets": [
         {
           "dsType": "influxdb",
@@ -538,7 +538,7 @@
         "Req / s": "#6ed0e0",
         "Req / sec": "#65c5db"
       },
-      "bars": false,
+      "bars": true,
       "dashLength": 10,
       "dashes": false,
       "datasource": "$data_source",
@@ -575,7 +575,7 @@
         "total": false,
         "values": true
       },
-      "lines": true,
+      "lines": false,
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
@@ -583,7 +583,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "pointradius": 1,
       "points": false,
       "renderer": "flot",
@@ -686,7 +686,7 @@
         "No of Errors": "#BF1B00",
         "Num of Errors": "#bf1b00"
       },
-      "bars": false,
+      "bars": true,
       "dashLength": 10,
       "dashes": false,
       "datasource": "$data_source",
@@ -721,7 +721,7 @@
         "total": true,
         "values": true
       },
-      "lines": true,
+      "lines": false,
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
@@ -729,7 +729,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "pointradius": 1,
       "points": false,
       "renderer": "flot",
@@ -879,7 +879,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1020,7 +1020,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "pointradius": 1,
       "points": false,
       "renderer": "flot",
@@ -1188,7 +1188,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "pointradius": 1,
       "points": false,
       "renderer": "flot",
@@ -1620,7 +1620,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "targets": [
         {
           "dsType": "influxdb",
@@ -1731,7 +1731,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "targets": [
         {
           "dsType": "influxdb",
@@ -1846,7 +1846,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "targets": [
         {
           "dsType": "influxdb",
@@ -1912,7 +1912,7 @@
         "Max": "#58140C",
         "Req / s": "#6ed0e0"
       },
-      "bars": false,
+      "bars": true,
       "dashLength": 10,
       "dashes": false,
       "datasource": "$data_source",
@@ -1948,7 +1948,7 @@
         "total": false,
         "values": true
       },
-      "lines": true,
+      "lines": false,
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
@@ -1956,7 +1956,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "pointradius": 1,
       "points": false,
       "renderer": "flot",
@@ -2070,7 +2070,7 @@
         "Num of Errors": "#bf1b00",
         "num of errors": "#bf1b00"
       },
-      "bars": false,
+      "bars": true,
       "dashLength": 10,
       "dashes": false,
       "datasource": "$data_source",
@@ -2103,7 +2103,7 @@
         "total": true,
         "values": true
       },
-      "lines": true,
+      "lines": false,
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
@@ -2111,9 +2111,9 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "pointradius": 1,
-      "points": true,
+      "points": false,
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
@@ -2258,7 +2258,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.3.1",
       "pointradius": 1,
       "points": false,
       "renderer": "flot",
@@ -2655,6 +2655,7 @@
           "text": "InfluxDB",
           "value": "InfluxDB"
         },
+        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "",
@@ -2670,12 +2671,13 @@
       {
         "allValue": null,
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "Phoeinx-product search",
           "value": "Phoeinx-product search"
         },
         "datasource": "$data_source",
         "definition": "",
+        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "",
@@ -2702,6 +2704,7 @@
         },
         "datasource": "$data_source",
         "definition": "",
+        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "",
@@ -2724,6 +2727,7 @@
           "text": "jmeter",
           "value": "jmeter"
         },
+        "error": null,
         "hide": 2,
         "label": "Measurement name",
         "name": "measurement_name",
@@ -2742,6 +2746,7 @@
           "text": "5",
           "value": "5"
         },
+        "error": null,
         "hide": 2,
         "label": "Backend send interval in second",
         "name": "send_interval",
