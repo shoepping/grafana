@@ -20,7 +20,7 @@
   "editable": true,
   "gnetId": 5496,
   "graphTooltip": 0,
-  "iteration": 1604381762679,
+  "iteration": 1604657796102,
   "links": [],
   "panels": [
     {
@@ -1352,12 +1352,18 @@
         {
           "columns": [],
           "datasource": "$data_source",
+          "fieldConfig": {
+            "defaults": {
+              "custom": {}
+            },
+            "overrides": []
+          },
           "fontSize": "100%",
           "gridPos": {
             "h": 7,
             "w": 8,
             "x": 0,
-            "y": 2
+            "y": 30
           },
           "height": "",
           "id": 25,
@@ -1449,12 +1455,18 @@
         {
           "columns": [],
           "datasource": "$data_source",
+          "fieldConfig": {
+            "defaults": {
+              "custom": {}
+            },
+            "overrides": []
+          },
           "fontSize": "100%",
           "gridPos": {
             "h": 7,
             "w": 16,
             "x": 8,
-            "y": 2
+            "y": 30
           },
           "id": 27,
           "interval": "[[send_interval]]s",
@@ -1929,7 +1941,7 @@
       "fillGradient": 0,
       "gridPos": {
         "h": 7,
-        "w": 12,
+        "w": 8,
         "x": 0,
         "y": 38
       },
@@ -2085,8 +2097,8 @@
       "fillGradient": 0,
       "gridPos": {
         "h": 7,
-        "w": 12,
-        "x": 12,
+        "w": 8,
+        "x": 8,
         "y": 38
       },
       "hiddenSeries": false,
@@ -2201,6 +2213,112 @@
         "align": false,
         "alignLevel": null
       }
+    },
+    {
+      "columns": [],
+      "datasource": "$data_source",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fontSize": "100%",
+      "gridPos": {
+        "h": 7,
+        "w": 8,
+        "x": 16,
+        "y": 38
+      },
+      "id": 39,
+      "interval": "[[send_interval]]s",
+      "links": [],
+      "pageSize": null,
+      "scroll": true,
+      "showHeader": true,
+      "sort": {
+        "col": 0,
+        "desc": true
+      },
+      "styles": [
+        {
+          "alias": "Time",
+          "align": "auto",
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "pattern": "Time",
+          "type": "hidden"
+        },
+        {
+          "alias": "",
+          "align": "auto",
+          "colorMode": null,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "decimals": 0,
+          "pattern": "/.*/",
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        }
+      ],
+      "targets": [
+        {
+          "alias": "$tag_responseCode",
+          "dsType": "influxdb",
+          "groupBy": [
+            {
+              "params": [
+                "responseCode"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "jmeter",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT sum(\"count\") FROM \"$measurement_name\" WHERE (\"application\" =~ /^$application$/ AND \"responseCode\" !~ /^$/ AND \"transaction\" =~ /^$transaction$/) AND $timeFilter GROUP BY \"responseCode\",\"responseMessage\"",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "count"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "responseMessage"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "application",
+              "operator": "=~",
+              "value": "/^$application$/"
+            },
+            {
+              "condition": "AND",
+              "key": "responseCode",
+              "operator": "!~",
+              "value": "/^$/"
+            }
+          ]
+        }
+      ],
+      "title": "Error Info - $transaction",
+      "transform": "table",
+      "type": "table-old"
     },
     {
       "aliasColors": {
